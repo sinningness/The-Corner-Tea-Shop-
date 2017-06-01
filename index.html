@@ -1,0 +1,380 @@
+<html>
+<head>
+<title>Tea Shop</title>
+<style type="text/css">
+body {margin:0px;background-color:blue; background-image:url('http://i.imgur.com/Kgpydjq.jpg');background-repeat:no-repeat; background-position:top center;background-attachment: fixed;}
+.outerleft{float:left; background-image:url('bubbles2.jpg');background-repeat:no-repeat;}
+.container{width: 980px; margin: 0px auto; background-color:#FFFFFF; overflow: hidden; border:2px solid; display:block;}
+.top{height:25px; border-bottom:2px solid;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B48D51), color-stop(1, #643D01));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top, #B48D51 0%, #643D01 100%);}
+	
+.banner{height:225px;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B48D51), color-stop(1, #643D01));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top, #B48D51 0%, #643D01 100%);}
+	
+.lbanner{width:12px; height:225px; float:left;border-right:2px solid;
+ 	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(right, #B48D51 0%, #643D01 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(right, #B48D51 0%, #643D01 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(right, #B48D51 0%, #643D01 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #B48D51), color-stop(1, #643D01));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(right, #B48D51 0%, #643D01 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to left, #B48D51 0%, #643D01 100%);}
+	
+.bannerimage{width:952px; height:225px; float:left;}
+
+.rbanner{width:12px; height:225px; float:right;border-left:2px solid;
+ 	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(left, #B48D51 0%, #643D01 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(left, #B48D51 0%, #643D01 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(left, #B48D51 0%, #643D01 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #B48D51), color-stop(1, #643D01));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(left, #B48D51 0%, #643D01 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to right, #B48D51 0%, #643D01 100%);}
+
+.menu{height:30px;border-top:2px solid;border-bottom:2px solid;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #B48D51), color-stop(1, #643D01));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #B48D51 0%, #643D01 100%);}
+
+.spa{padding:12px;width:100%; border:0px solid; background-color:#BE975B;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;}
+
+.chat{background-color:white; width:100%; margin: 0px auto; border:1px solid; -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+
+.attractions{width:100%; padding-top:15px; margin: 0px auto;}
+
+.divheader{height:25px; border:1px solid; width:100%; align:center; margin-left:auto; margin-right:auto; font-weight:bold; font-family:"Helvetica"; padding-left:10px; padding-top:2px; display:block;
+	color:#FFFFFF;
+	border-color:#000000;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B48D51), color-stop(1, #643D01));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #B48D51 0%, #643D01 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top, #B48D51 0%, #643D01 100%);}
+	
+.contentbody{border-left:1px solid; border-right:1px solid; border-bottom:1px solid; width:100%; padding:7px; font-color:#FFFFFF; background-color:white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color:#008B8B;
+	border-color:#000000;}
+
+.rules{width:955px; padding-top:15px; margin: 0px auto;}
+
+.footer{height:30px;border-top:2px solid;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #B48D51), color-stop(1, #643D01));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #B48D51 0%, #643D01 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #B48D51 0%, #643D01 100%);}
+	
+.like{background-image: -moz-linear-gradient(top, #B48D51 0%, #39D1D1 100%);}
+td{color:#008B8B}
+.tabattractions{width:100%; margin-left:auto; margin-right:auto;}
+.tdattractions{padding-right:225px}
+.blue{color:#0000FF}
+</style>
+</head>
+<body>
+<div class="outercenter" width="100%">
+	<div class="container">
+		<div class="header">
+			<div class="top">
+			</div>
+			<div class="banner">
+				<div class="lbanner">
+				</div>
+				<div class="bimage">
+					<img src="http://i.imgur.com/ehh3ahe.jpg" class="bannerimage">
+				</div>
+				<div class="rbanner">
+				</div>
+			</div>
+			<div class="menu">
+			</div>
+		</div>
+		<div class="spa">
+			<div class="chat">
+				<center><script id="cid0020000157269282684" data-cfasync="false" async src="http://st.chatango.com/js/gz/emb.js" style="width: 945px;height: 620px;">{"handle":"jaggerscornerteashop","arch":"js","styles":{"a":"ffffff","b":100,"e":"ffffff","h":"ffffff","l":"cccccc","m":"dadada","q":"ffffff","r":100,"sbc":"bbbbbb","fwtickm":1}}</script></center>
+			</div>
+			<div class="attractions">
+				<div class="divheader">..:: Attractions
+				</div>
+				<div class="contentbody">
+					<table class="tabattractions">
+						<tr> 
+							<td class="tdattractions">
+								<b><font color="#0000FF">Types of Areas:</font></b>
+							</td>
+							<td class="tdattractions">
+								<b><font color="#0000FF">Events:</font></b>
+							</td>
+							<td>
+								<b><font color="#0000FF">Under Construction:</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bakery
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undecided
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sweet Buffet
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undecided
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lounge
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undecided
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undecided
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Undecided
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction.
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Construction
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="rules">
+				<div class="divheader">..:: Rules
+				</div>
+				<div class="contentbody">1.  This is a tea shop not a drama ground take the drama to pm's.<br>
+					2. Treat other members of the chat with respect.<br>
+					3. If your getting angry at something, leave the room for awhile.<br>
+					4. If a mod ask for it to be dropped drop it no arguing over it.<br>
+					5. Try to respect the staffs job there hired for it to do it.
+					6. No spoilers if asked
+				</div>
+			</div>
+			<div class="rules">
+				<div class="divheader">..:: Jobs
+				</div>
+				<div class="contentbody">New jobs are waiting to be filled!  If you have an idea for a job that's not listed let us know.<br>
+					<br>
+					Cashier : Open <br>
+					Waiters/Waitress : Open<br>
+					Cashier : Open <br>
+					Baker : Open <br>
+					Cook : Open<br>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>
+</div>
+</body>
+</html>
